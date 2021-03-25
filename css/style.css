@@ -34,6 +34,9 @@ img {
     letter-spacing: 0.5px;
     transition: all .3s ease-in-out;
 }
+.navigation-link.current-link{
+    color: #8F79D4;
+}
 @media (min-width: 992px){
     .navigation-link:hover{
         color: #8F79D4;
@@ -58,6 +61,23 @@ button {
     line-height: 20px;
     display: flex;
     align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+@media (min-width: 992px){
+    .button:hover{
+        background: #262D33;
+    }
+}
+
+.button-dark{
+    background: #262D33;
+}
+
+@media (min-width: 992px){
+    .button-dark:hover{
+        background: #8F79D4;
+    }
 }
 
 .button-icon, .button-price {
@@ -252,6 +272,14 @@ button {
     font-size: 14px;
     line-height: 20px;
     padding: 10px;
+    white-space: nowrap;
+    transition: all .3s ease-in-out;
+}
+
+@media (min-width: 992px){
+    .more:hover{
+        color: #8F79D4;
+    }
 }
 
 .goods-card {
@@ -309,7 +337,7 @@ button {
 }
 
 .footer {
-    background: #8F79D4;
+    background: #262D33;
     padding-top: 45px;
     padding-bottom: 40px;
     color: #fff;
@@ -458,8 +486,6 @@ body.hidden{
 }
 
 .cart-buy{
-    background-color: #28a745;
-    border-color: #28a745;
     display: block;
     margin-left: auto;
     height: 40px;
